@@ -1,0 +1,90 @@
+# CECOS Hub - Environment Configuration Template
+# Copy this file to .env and fill in your actual values
+
+# ===========================================
+# FIREBASE CONFIGURATION
+# ===========================================
+
+# Firebase Project ID (same for all platforms)
+FIREBASE_PROJECT_ID=your_project_id_here
+
+# Firebase API Keys (get from Firebase Console > Project Settings > General)
+FIREBASE_ANDROID_API_KEY=your_android_api_key_here
+FIREBASE_IOS_API_KEY=your_ios_api_key_here
+FIREBASE_WEB_API_KEY=your_web_api_key_here
+FIREBASE_MACOS_API_KEY=your_macos_api_key_here
+FIREBASE_WINDOWS_API_KEY=your_windows_api_key_here
+
+# Firebase App IDs (get from Firebase Console > Project Settings > General)
+FIREBASE_ANDROID_APP_ID=your_android_app_id_here
+FIREBASE_IOS_APP_ID=your_ios_app_id_here
+FIREBASE_WEB_APP_ID=your_web_app_id_here
+FIREBASE_MACOS_APP_ID=your_macos_app_id_here
+FIREBASE_WINDOWS_APP_ID=your_windows_app_id_here
+
+# Firebase Messaging Sender ID (same for all platforms)
+FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+
+# Firebase Client IDs (get from Firebase Console > Authentication > Sign-in method)
+FIREBASE_ANDROID_CLIENT_ID=your_android_client_id_here
+FIREBASE_IOS_CLIENT_ID=your_ios_client_id_here
+FIREBASE_WEB_CLIENT_ID=your_web_client_id_here
+
+# Firebase Bundle IDs
+FIREBASE_IOS_BUNDLE_ID=your_ios_bundle_id_here
+
+# Firebase Measurement IDs (get from Firebase Console > Analytics)
+FIREBASE_WEB_MEASUREMENT_ID=your_web_measurement_id_here
+FIREBASE_WINDOWS_MEASUREMENT_ID=your_windows_measurement_id_here
+
+# ===========================================
+# SUPABASE CONFIGURATION
+# ===========================================
+
+# Supabase Project URL (get from Supabase Dashboard > Settings > API)
+SUPABASE_URL=https://your-project-ref.supabase.co
+
+# Supabase Anonymous Key (get from Supabase Dashboard > Settings > API)
+SUPABASE_ANON_KEY=your_supabase_anon_key_here
+
+# ===========================================
+# FCM CONFIGURATION
+# ===========================================
+
+# FCM Server Key (get from Firebase Console > Project Settings > Cloud Messaging)
+# WARNING: For production, use a backend service instead of exposing this key
+FCM_SERVER_KEY=your_fcm_server_key_here
+
+# ===========================================
+# ANDROID CONFIGURATION
+# ===========================================
+
+# Android Package Name
+ANDROID_PACKAGE_NAME=com.example.cecos_hub
+
+# Android Certificate Hash (get from Firebase Console > Project Settings > General)
+ANDROID_CERTIFICATE_HASH=your_certificate_hash_here
+
+# ===========================================
+# SETUP INSTRUCTIONS
+# ===========================================
+
+# 1. Copy this file to .env
+# 2. Fill in all the placeholder values with your actual credentials
+# 3. Never commit the .env file to version control
+# 4. Update the corresponding files with your values:
+#    - lib/firebase_options.dart
+#    - lib/main.dart
+#    - lib/services/notification_service.dart
+#    - android/app/google-services.json
+#    - firebase.json
+
+# ===========================================
+# SECURITY NOTES
+# ===========================================
+
+# - Never commit sensitive keys to version control
+# - Use environment variables in production
+# - Consider using a backend service for FCM instead of client-side keys
+# - Regularly rotate your API keys
+# - Use Firebase App Check for additional security
