@@ -1,0 +1,6 @@
+{
+  "dart.flutterEmulatorTimeout": 120,
+  "dart.flutterAdditionalArgs": [],
+  "dart.flutterRunLogFile": null,
+  "cmake.ignoreCMakeListsMissing": true
+}
